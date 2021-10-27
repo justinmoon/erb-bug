@@ -17,6 +17,8 @@ import log from 'electron-log';
 import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
 
+console.log('app version', app.getVersion());
+
 export default class AppUpdater {
   constructor() {
     log.transports.file.level = 'info';
